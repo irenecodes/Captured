@@ -1,0 +1,15 @@
+// variables
+$play:'Playfair Display', serif;
+$robo: 'Roboto', sans-serif;
+$yellow: #fdfa69;
+$green: #4ceea7;
+$black: #2c2c2c;
+$white: #fafafa;
+$ice: #effdf3;
+
+// mixins
+@mixin heading ($font-size) {
+    font-size: $font-size;
+    font-family: $play;
+    font-weight:700i;
+}
