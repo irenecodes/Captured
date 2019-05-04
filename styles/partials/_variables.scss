@@ -11,5 +11,7 @@ $ice: #effdf3;
 @mixin heading ($font-size) {
     font-size: $font-size;
     font-family: $play;
-    font-weight:700i;
+    font-weight:700;
+    text-transform: uppercase;
 }
+

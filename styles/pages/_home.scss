@@ -1,3 +1,45 @@
+// header {
+//     height:100vh;
+// }
+
+
+// header styles
 h1 {
-    color: $ice;
+    @include heading(138px);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index:30;
+}
+
+.yellow-border {
+    width:40%;
+    padding:20px 0 20px 20px;
+    background-color: $yellow;
+    position:absolute;
+    right:0;
+    top:25%;
+    z-index:10;
+}
+
+.header-bottom {
+    padding:80px;
+    text-align: center;
+    // background-color: $ice;
+    background-color: steelblue;
+    p {
+        text-align:left;
+    }
+}
+
+// section services styles
+.services {
+    display:flex;
+    flex-wrap:wrap;
+    div {
+        flex:0 0 40%;
+    }
+
 }

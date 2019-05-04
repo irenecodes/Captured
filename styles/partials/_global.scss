@@ -1,0 +1,48 @@
+// common styles across all pages
+html {
+    font-family: $robo;
+    font-size:20px;
+    color:$black;
+    line-height:32px;
+}
+
+img {
+    display:block;
+    width:100%;
+    max-width: 100%;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+.wrapper {
+    max-width:1000px;
+    margin:0 auto;
+}
+
+h2 {
+    @include heading(42px);
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.button {
+    @include heading(20px);
+    padding:10px;
+    background-color: $green;
+}
+
+.shadow-right {
+    box-shadow: -15px -15px $yellow;
+
+}
+
+.shadow-left {
+    box-shadow: 15px 15px $yellow;
+}
+
