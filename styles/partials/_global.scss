@@ -22,8 +22,16 @@ ul {
     margin:0 auto;
 }
 
+.heading {
+    @include heading(80px);
+}
+
 h2 {
     @include heading(42px);
+}
+
+h3 {
+    @include heading(25px);
 }
 
 a {
@@ -37,12 +45,23 @@ a {
     background-color: $green;
 }
 
-.shadow-right {
-    box-shadow: -15px -15px $yellow;
+.shadow-left {
+    box-shadow: -15px 15px $yellow;
 
 }
 
-.shadow-left {
+.shadow-right {
     box-shadow: 15px 15px $yellow;
+}
+
+footer {
+    background: $black;
+    text-align: center;
+    p {
+        margin:0;
+    }
+    .black-text {
+        color:$black;
+    }
 }
 

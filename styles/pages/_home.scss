@@ -4,13 +4,19 @@
 
 
 // header styles
-h1 {
+.home-header {
+    position:relative;
+}
+
+.home-heading {
     @include heading(138px);
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 138px);
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display:block;
     z-index:30;
 }
 
@@ -27,19 +33,80 @@ h1 {
 .header-bottom {
     padding:80px;
     text-align: center;
-    // background-color: $ice;
-    background-color: steelblue;
+    background-color: $ice;
     p {
         text-align:left;
     }
 }
 
 // section services styles
-.services {
+.service-top,
+.service-bottom {
+    display:flex;
+    justify-content: space-between;
+    div {
+    flex: 0 0 45%;
+    }
+    .service-words:nth-child(1) {
+        
+    }
+    .service-words::nth-child(2) {
+        
+    }
+}
+
+
+// .services {
+//     display:flex;
+//     flex-wrap:wrap;
+//     div {
+//         flex:0 0 40%;
+//     }
+
+// }
+
+// section go-to styles
+.go-to {
+    background-color: $ice;
+}
+
+.go-to-content {
     display:flex;
     flex-wrap:wrap;
     div {
-        flex:0 0 40%;
+        flex: 0 0 50%;
     }
 
+    h3 {
+        @include heading(32px);
+    }
 }
+// section monthly pro styles
+.monthly-pro {
+    background-color:$ice;
+    .monthly-pro-content {
+    display:flex;
+    justify-content: space-between;
+    }
+    .monthly-pro-pic {
+        flex:0 0 40%;
+        // length:200px;
+    }
+    .monthly-pro-words {
+        flex: 0 0 50%;
+    }
+}
+
+// section gallery styles
+.gallery {
+    display:flex;
+    div {
+        justify-content: space-between;
+    }
+}
+
+// footer styles
+footer {
+    color:$white;
+}
+

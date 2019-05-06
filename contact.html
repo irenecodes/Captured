@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Captured Blog - Irene Truong Project 2</title>
+    <title>Captured Contact Us - Irene Truong Project 2</title>
 
 <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="contact-head">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -25,27 +25,29 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Get in touch</h1>
+        <h1 class="heading">Get in touch</h1>
     </header>
 
-    <main>
-        <form action="" method="POST" class="contact-us-form" autocomplete="off" name="contact-us-form">
+    <main class="contact-flex">
+        <form action="" method="POST" class="contact-us-form form2 wrapper shadow-left" autocomplete="off" name="contact-us-form">
             <fieldset>
-                <label for="name" class="visuallyHidden">Name</label>
-                <input type="name" placeholder="Name" id="name">
+                <div class="personal-input">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="name" placeholder="Name" id="name">
         
-                <label for="emailAddress" class="visuallyHidden">Email Address</label>
-                <input type="email" placeholder="Email address" id="emailAddress">
+                    <label for="emailAddress" class="visuallyHidden">Email Address</label>
+                    <input type="email" placeholder="Email address" id="emailAddress">
+                </div>
         
                 <label for="message" class="visuallyHidden">Message</label>
                 <input type="text" placeholder="Message" name="message" id="message">
-
-                <button type="submit">Submit</button>
-
+        
+                <button type="submit">Post Comment</button>
+        
             </fieldset>
         </form>
 
-        <aside>
+        <aside class="aside-contact wrapper">
             <div class="social-media">
                 <ul>
                     <li>
@@ -80,7 +82,7 @@
     
     </main>
     <footer>
-        <p>Copyright © 2019 HackerYou</p>
+        <p class="black-text">Copyright © 2019 HackerYou</p>
     </footer>
 </body>
 </html>

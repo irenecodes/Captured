@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-top">
+    <header class="home-header">
+        <div>
             <div>
                 <img src="assets/header-image.jpg" alt="Fujifilm DSLR on display.">
             </div>
@@ -35,7 +35,7 @@
         <div class = "yellow-border">
             <img src="assets/header-box-image.jpg" alt="Camera Lens on display.">
         </div>
-        <h1>Captured</h1>
+        <h1 class="home-heading">Captured</h1>
         <div class="header-bottom">
             
             <h2>What is captured?</h2>
@@ -50,54 +50,70 @@
 
     <main>
         <section class="services">
-            <div>
-                <img class="shadow-left" src="assets/left-image.jpg" alt="Camera aimed at sky taken during our landscape photography class.">
+            <div class="service-top">
+                <div>
+                    <img class="shadow-right" src="assets/left-image.jpg" alt="Camera aimed at sky taken during our landscape photography class.">
+                </div>
+
+                <div class="service-words wrapper">
+                    <h3>Unlock your skills</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit earum similique recusandae natus. Repellendus id earum veritatis inventore, similique sit sequi voluptatibus ipsam eaque, officia quos? Blanditiis corrupti modi deserunt.</p>
+                    <a class="button" href="#">Read more</a>
+                </div>
             </div>
 
-            <div>
-                <h3>Unlock your skills</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit earum similique recusandae natus. Repellendus id earum veritatis inventore, similique sit sequi voluptatibus ipsam eaque, officia quos? Blanditiis corrupti modi deserunt.</p>
-                <a class="button" href="#">Read more</a>
-            </div>
+            <div class="service-bottom">
+                <div class="service-words wrapper">
+                    <h3>Getting new gear</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, labore vitae ipsa assumenda, beatae numquam eos velit delectus aliquid consequuntur sapiente sunt praesentium ipsam molestias tenetur quas. Enim, molestiae nulla?</p>
+                    <a class="button" href="#">Read more</a>
+                </div>
 
-            <div>
-                <h3>Getting new gear</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, labore vitae ipsa assumenda, beatae numquam eos velit delectus aliquid consequuntur sapiente sunt praesentium ipsam molestias tenetur quas. Enim, molestiae nulla?</p>
-                <a class="button" href="#">Read more</a>
-            </div>
-
-            <div>
-                <img class="shadow-right" src="assets/right-image.jpg" alt="Satisfied customer holding the new Canon X.">
+                <div>
+                    <img class="shadow-left" src="assets/right-image.jpg" alt="Satisfied customer holding the new Canon X.">
+                </div>
             </div>
         </section> <!-- section services ends -->
 
-        <section>
-            <div>
-                <i class="fas fa-camera"></i>
-                <h3>Top picks</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum dolorum, facere quia dolor mollitia maiores.</p>
-            </div>
+        <section class="go-to">
+            <div class="go-to-content wrapper">
+                <div>
+                    
+                    <i class="fas fa-camera"></i>
+                    <div>
+                        <h3>Top picks</h3>
+                        
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum dolorum, facere quia dolor mollitia maiores.</p>
+                    </div>
+                </div>
 
-            <div>
-                <i class="fas fa-users"></i>
-                <h3>Community</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
-                dolorum, facere quia dolor mollitia maiores.</p>
-            </div>
+                <div>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
+                    dolorum, facere quia dolor mollitia maiores.</p>
+                </div>
 
-            <div>
-                <i class="fas fa-file"></i>
-                <h3>Blog</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
-                dolorum, facere quia dolor mollitia maiores.</p>
-            </div>
+                <div>
+                    <a href="blog.html">
+                        <i class="fas fa-file"></i>
+                        <h3>Blog</h3>
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
+                    dolorum, facere quia dolor mollitia maiores.</p>
+                </div>
 
-            <div>
-                <i class="fas fa-phone"></i>
-                <h3>get in touch</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
-                dolorum, facere quia dolor mollitia maiores.</p>
-            </div>    
+                <div>
+                    <a href="contact.html">
+                        <i class="fas fa-phone"></i>
+                        <h3>get in touch</h3>
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
+                    dolorum, facere quia dolor mollitia maiores.</p>
+                </div>    
+            </div>
         </section>
 
         <figure>
@@ -105,19 +121,23 @@
             <!-- no alt text bc decortive -->
         </figure>
 
-        <section>
-            <img class="shadow-right" src="assets/small-box.jpg" alt="Student George sitting on a mountain ledge preparing to photograph mountains.">
-            <div>
-                <h2>This month profile</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At expedita, repudiandae temporibus odio ea placeat eius recusandae, reiciendis commodi quia aliquid, minima quidem ipsum eos esse aspernatur veniam doloribus voluptates.</p>
-                <a class="button" href="#">find out more</a>
+        <section class="monthly-pro">
+            <div class="monthly-pro-content wrapper">
+                <div class="monthly-pro-pic">
+                    <img class="shadow-right" src="assets/small-box.jpg" alt="Student George sitting on a mountain ledge preparing to photograph mountains.">
+                </div>
+                <div class="monthly-pro-words"> 
+                    <h2>This month profile</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At expedita, repudiandae temporibus odio ea placeat eius recusandae, reiciendis commodi quia aliquid, minima quidem ipsum eos esse aspernatur veniam doloribus voluptates.</p>
+                    <a class="button" href="#">find out more</a>
+                </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery wrapper">
             <div><img src="assets/gallery-image-1.jpg" alt="Camera on a tri-pod."></div>
             <div><img src="assets/gallery-image-2.jpg" alt="DSLR on foliage to capture bird's eye view."></div>
-            <div><img src="assets/gallery-image-3.jpg" alt="Nikon X on display in-store.">Nikon X on display in-store.</div>
+            <div><img src="assets/gallery-image-3.jpg" alt="Nikon X on display in-store."></div>
         </section> <!-- section gallery ends -->
     </main>
 

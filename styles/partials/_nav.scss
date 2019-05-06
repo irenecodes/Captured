@@ -1,8 +1,9 @@
 nav {
     position:absolute;
     top:0;
-    right:0;
+    right:40px;
     z-index:10;
+    // NEED TO CONTAIN NAV IN WRAPPER
     ul {
         display:flex;
         flex-direction:row; 

@@ -1,0 +1,75 @@
+// header styles
+.blog-head {
+    background-image: url(../assets/blog-header.jpg);
+	background-size:cover;
+	height:50vh;
+}
+
+// main styles
+.blog-content {
+    // background-color: $ice;
+    background-color: steelblue;
+    display:flex;
+    flex-direction: row-reverse;
+    
+
+}
+
+
+
+.blog-right-flex {
+    display:flex;
+    flex-direction: column;
+    .blog-main {
+        flex: 0 0 60%;
+    }
+    .blog-main-pic {
+        max-width:50%;
+    }
+    .blog-main-words {
+        border-left: 5px $yellow solid;
+        border-bottom: 5px $yellow solid;
+    }
+}
+
+// aside comments styles
+.blog-comments {
+    display:flex;
+    flex-direction:column;
+    .post {
+        display:flex;
+    }
+    .avatar {
+        flex: 0 0 100px;
+    }
+    
+}
+
+// aside blog secondary styles (left side)
+.blog-left-flex {
+    display:flex;
+    flex-direction: column;
+    .blog-secondary-image {
+        width:200px;
+        // flex: 0 0 25%;
+    }
+    h4 {
+        @include heading(32px);
+    }
+    a {
+        font-style: italic;
+        font-weight: 600;
+        &:hover {
+            color: $green;       
+        }
+    }
+    ul {
+        // list-style-type: circle;
+        // circles not showing?
+
+    
+    }
+    .blog-secondary-words {
+        width:180px;
+    }
+}
