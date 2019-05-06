@@ -1,25 +1,51 @@
+.contact-body {
+    background-color: $ice;
+}
+
 .contact-head {
     background-image: url(../assets/contact-header.jpg);
 	background-size:cover;
-	height:50vh;
+    height:70vh;
 }
 
-.contact-flex {
+.contact-content {
     display:flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    
+    
+    // padding-bottom:50px;
+
+    .form2 {
+        flex: 0 0 70%;
+        position:relative;
+        z-index:30;
+        bottom:160px;
+        padding:20px;
+        background:$white;
+        input[type=email],
+        input[type=name],
+        textarea {
+            background-color: $white;
+        }
+    }
 }
 
 .aside-contact {
     // width:20%;
+    flex: 0 0 25%;
+    padding-top:80px;
     display:flex;
     flex-direction: column;
+    h4 {
+        // @include heading(26px);
+        @include heading(1.3rem);
+        margin:15px 0;
+    }
     span {
         display:block;
     }
 }
-
-
-
 .social-media ul {
     display:flex;
     list-style-type: none;

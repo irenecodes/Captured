@@ -1,5 +1,10 @@
 fieldset {
     border:none;
+    
+}
+
+.contact-us-form {
+    width:100%;
 }
 
 input[type=name],
@@ -12,14 +17,13 @@ input[type=email] {
     margin-bottom:10px;
 }
 
-input[type=text] {
-    border:1px $green solid;
-    width:100%;
-    margin:0;
-    margin-bottom: 10px;
 
+textarea {
+    width:100%;
+    border:1px solid $green;
+    margin:20px 0;
+    resize:none;
     padding:10px;
-    height:200px;
 }
 
 button[type=submit] {
@@ -32,6 +36,7 @@ button[type=submit] {
     min-width:320px;
     margin: 0 auto;
     padding:10px;
+    width:100%;
     // may change min-width
 }
 

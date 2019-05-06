@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
-<body>
+<body class="blog-body">
     <header class="blog-head">
         <nav>
             <ul>
@@ -25,13 +25,13 @@
         </nav>
         <h1 class="heading">blog</h1>
     </header>
-    <div class="blog-content">
+    <div class="blog-content wrapper">
         <div class="blog-right-flex">
             <main class="blog-main">
                 <div class="shadow-left blog-main-pic">
                     <img src="assets/blog-post-image.jpg" alt="Student Andy photographing in the prairies.">
                 </div>
-                <div class="blog-main-words wrapper">
+                <div class="blog-main-words">
                     <h2>finding great locations</h2>
                     <p>Monday May 4th, 2019 by Dieula</p>
                     <p>Curbitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisaue volutpat augue enim, pulvinar lobortis nibh
@@ -52,14 +52,14 @@
                 </div><!-- div great locations ends -->
             </main>
 
-            <aside class="blog-comments wrapper">
+            <aside class="blog-comments ">
                 <h3>Comments:</h3>
-                <div class="post">
+                <div class="post post1">
                     <div class="avatar">
                         <img src="assets/comment-1.jpg" alt="Jeremy's avatar.">
                     </div>
                     <div>
-                        <p>Wednesday October 10th, 2018 by Jeremy</p>
+                        <p class="date">Wednesday October 10th, 2018 by Jeremy</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis explicabo culpa eaque vero cupiditate neque, similique quibusdam totam ut delectus voluptatem impedit ipsa ipsum esse voluptatibus, pariatur, eum earum.</p>
                     </div>
                 </div> <!-- Jeremy post ends -->
@@ -69,13 +69,13 @@
                         <img src="assets/comment-2.jpg" alt="Julia's avatar.">
                     </div>
                     <div>
-                        <p>Tuesday October 9th, 2018 by Julia</p>
+                        <p class="date">Tuesday October 9th, 2018 by Julia</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis explicabo culpa eaque verocupiditate neque, similique quibusdam totam ut delectus voluptatem impedit ipsa ipsum esse voluptatibus, pariatur, eum earum.</p>
                     </div>
                 </div> <!-- Julia post ends -->
             </aside>
 
-            <form action="" method="POST" class="contact-us-form wrapper" autocomplete="off" name="contact-us-form">
+            <form action="" method="POST" class="contact-us-form" autocomplete="off" name="contact-us-form">
                 <fieldset>
                     <div class="personal-input">
                         <label for="name" class="visuallyHidden">Name</label>
@@ -85,8 +85,11 @@
                         <input type="email" placeholder="Email address" id="emailAddress">
                     </div>
             
-                    <label for="message" class="visuallyHidden">Message</label>
+                    <!-- <label for="message" class="visuallyHidden">Message</label>
                     <input type="text" placeholder="Message" name="message" id="message">
+                     -->
+                    <label for="comment" class="visuallyHidden">Comment</label>
+                    <textarea name="comment" placeholder="Comment" cols="30" rows="10"></textarea>
             
                     <button type="submit">Post Comment</button>
             
@@ -99,9 +102,9 @@
                 <img src="assets/side-blog-image.jpg" alt="">
             </div>
             <div class="blog-secondary-words">
-                <h4>About Captured</h4>
+                <h5>About Captured</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores. <a href="#">Find out more.</a></p>
-                <h4>Recent posts</h4>
+                <h5>Recent posts</h5>
                 <ul>
                     <li>Donec favilisis tortor ut</li>
                     <li>Augue lachinia at viverra</li>
@@ -114,7 +117,7 @@
     
 
     <footer>
-        <p class="black-text">Copyright © 2019 HackerYou</p>
+        <p>Copyright © 2019 HackerYou</p>
     </footer>
 </body>
 </html>
