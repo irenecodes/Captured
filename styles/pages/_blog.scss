@@ -32,24 +32,16 @@
     z-index:30;
     bottom:150px;
     margin-bottom: -120px;
-    .shadow-left {
-        position:relative;
-        // width:106%;
-        // left:100px;
-        right:0;
-         
-        // how to make fixed to right side?!
 
-        img {
-            overflow:hidden;
-        }
-    }
 
     .blog-main {
         flex: 0 0 60%;
     }
-    .blog-main-words {
+    .blog-main-words,
+    form {
         padding:20px 60px 20px 20px;
+    }
+    .blog-main-words {
         margin-left: -15px;
         border-left: 5px $yellow solid;
         border-bottom: 5px $yellow solid;
@@ -60,8 +52,8 @@
         background-color: $ice;
     }
     form {
-        margin-top:40px;
-        padding:20px 60px 0px 0px;
+        margin: 40px 0;
+
     }
 }
 
@@ -130,23 +122,87 @@
             padding-right:15px;
         }
         list-style-position: inside;
-
-        // list-style-type: circle;
-        // circles not showing?
     }
 }
 
 // media queries 
 @media (max-width:1024px) {
+    .blog-content {
+        flex-direction: column-reverse;
+        
+    }
+    .blog-left-flex {
+        margin: 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .blog-secondary-image {
+            position: static;
+            left:0;
+            z-index:30;
+            flex: 1 0 30%;
+
+            img {
+                border:15px solid $yellow;
+            }
+        }
+        .blog-secondary-words {
+            background-color: $white;
+            padding:15px;
+            margin-left:0;
+            position:static;
+            flex: 2 0 55%;
+        }
+        h5 {
+            margin:5px 0;
+        }
     
+    }
+    .blog-right-flex {
+        position:static;
+        max-width:80%;
+        padding:20px;
+        // margin-bottom: 0px;
+        margin: 0 auto;
+        // .blog-main {
+            
+        // }
+        .blog-main-words,
+        form {
+            padding:15px;
+        }
+
+        form {
+            border: 1px $green solid;
+        }
+    }
+
 }
 
 @media (max-width:768px) {
-    
+    .blog-right-flex {
+        max-width:100%;
+    }
 }
 
 @media (max-width:480px) {
     
+    .blog-left-flex {
+        
+
+        .blog-secondary-image {
+            display:none;
+        }
+    }
+
+    .blog-comments {
+        padding:0;
+        .avatar {
+            margin-right:10px;
+            flex: 0 1 350px;
+        }
+    }
 }
 
 @media (max-width:320px) {

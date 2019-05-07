@@ -148,7 +148,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 125%;
   color: #2c2c2c;
   line-height: 32px; }
 
@@ -230,6 +230,14 @@ footer {
     color: #2c2c2c;
     line-height: 32px; } }
 
+@media (max-width: 480px) {
+  .heading {
+    font-size: 3rem; } }
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: 2.8rem; } }
+
 nav {
   position: absolute;
   top: 0;
@@ -308,7 +316,7 @@ button[type=submit] {
   letter-spacing: 1px;
   background-color: #4ceea7;
   border: none;
-  min-width: 320px;
+  min-width: 220px;
   margin: 0 auto;
   padding: 10px;
   width: 100%; }
@@ -320,6 +328,27 @@ button[type=submit] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+@media (max-width: 480px) {
+  .personal-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  input[type=name],
+  input[type=email] {
+    width: 100%;
+    border: 0;
+    border: 1px solid #4ceea7;
+    margin: 5px 0 0 0;
+    padding: 10px; } }
+
+@media (max-width: 320px) {
+  button[type=submit] {
+    font-size: 0.8rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase; } }
 
 .home-header {
   position: relative; }
@@ -589,17 +618,14 @@ button[type=submit] {
   z-index: 30;
   bottom: 150px;
   margin-bottom: -120px; }
-  .blog-right-flex .shadow-left {
-    position: relative;
-    right: 0; }
-    .blog-right-flex .shadow-left img {
-      overflow: hidden; }
   .blog-right-flex .blog-main {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60%;
     flex: 0 0 60%; }
+  .blog-right-flex .blog-main-words,
+  .blog-right-flex form {
+    padding: 20px 60px 20px 20px; }
   .blog-right-flex .blog-main-words {
-    padding: 20px 60px 20px 20px;
     margin-left: -15px;
     border-left: 5px #fdfa69 solid;
     border-bottom: 5px #fdfa69 solid; }
@@ -608,8 +634,7 @@ button[type=submit] {
   .blog-right-flex textarea {
     background-color: #effdf3; }
   .blog-right-flex form {
-    margin-top: 40px;
-    padding: 20px 60px 0px 0px; }
+    margin: 40px 0; }
 
 .blog-comments {
   display: -webkit-box;
@@ -673,6 +698,68 @@ button[type=submit] {
       content: "•";
       color: #4ceea7;
       padding-right: 15px; }
+
+@media (max-width: 1024px) {
+  .blog-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .blog-left-flex {
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .blog-left-flex .blog-secondary-image {
+      position: static;
+      left: 0;
+      z-index: 30;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+      flex: 1 0 30%; }
+      .blog-left-flex .blog-secondary-image img {
+        border: 15px solid #fdfa69; }
+    .blog-left-flex .blog-secondary-words {
+      background-color: #fafafa;
+      padding: 15px;
+      margin-left: 0;
+      position: static;
+      -webkit-box-flex: 2;
+      -ms-flex: 2 0 55%;
+      flex: 2 0 55%; }
+    .blog-left-flex h5 {
+      margin: 5px 0; }
+  .blog-right-flex {
+    position: static;
+    max-width: 80%;
+    padding: 20px;
+    margin: 0 auto; }
+    .blog-right-flex .blog-main-words,
+    .blog-right-flex form {
+      padding: 15px; }
+    .blog-right-flex form {
+      border: 1px #4ceea7 solid; } }
+
+@media (max-width: 768px) {
+  .blog-right-flex {
+    max-width: 100%; } }
+
+@media (max-width: 480px) {
+  .blog-left-flex .blog-secondary-image {
+    display: none; }
+  .blog-comments {
+    padding: 0; }
+    .blog-comments .avatar {
+      margin-right: 10px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+      flex: 0 1 350px; } }
 
 .contact-body {
   background-color: #effdf3; }
@@ -749,7 +836,14 @@ button[type=submit] {
     .contact-content .form2 {
       bottom: 10px; }
   .aside-contact {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse; } }
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px; }
+  .social-media ul {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; } }
+
+@media (max-width: 768px) {
+  .aside-contact {
+    font-size: 1.2rem; } }

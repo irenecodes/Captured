@@ -33,7 +33,7 @@ button[type=submit] {
     letter-spacing: 1px;
     background-color: $green;
     border:none;
-    min-width:320px;
+    min-width:220px;
     margin: 0 auto;
     padding:10px;
     width:100%;
@@ -44,4 +44,30 @@ button[type=submit] {
     display:flex;
     justify-content: space-between;
 }
+
+// media queries
+@media (max-width:480px) {
+    .personal-input {
+        flex-direction: column;
+    }
+    
+    input[type=name],
+    input[type=email] {
+        width:100%;
+        border:0;
+        border:1px solid $green;
+        margin:5px 0 0 0;
+        padding:10px;
+    }
+
+    
+}
+
+@media (max-width:320px) {
+    button[type=submit] {
+        @include heading(0.8rem);
+    }
+
+}
+
 

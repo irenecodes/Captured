@@ -1,7 +1,7 @@
 // common styles across multiple pages
 html {
     font-family: $robo;
-    font-size:20px;
+    font-size:125%;
     color:$black;
     line-height:32px;
 }
@@ -92,3 +92,18 @@ footer {
     line-height:32px;
     }
 }
+
+@media (max-width:480px) {
+    .heading {
+        font-size:3rem;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .heading {
+        font-size:2.8rem;
+    }
+    
+}
+
