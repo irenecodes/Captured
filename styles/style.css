@@ -259,7 +259,10 @@ nav {
 @media (max-width: 768px) {
   nav {
     position: fixed;
+    display: block;
     z-index: 50;
+    right: 0;
+    left: 0;
     background-color: #131313; }
     nav ul {
       -webkit-box-pack: center;
@@ -268,6 +271,11 @@ nav {
     nav a {
       color: #fafafa;
       font-family: "Roboto", sans-serif; } }
+
+@media (max-width: 480px) {
+  nav ul li {
+    font-size: 1rem;
+    padding: 5px 10px; } }
 
 fieldset {
   border: none; }
@@ -512,13 +520,49 @@ button[type=submit] {
   .gallery {
     padding: 10px 0; } }
 
+@media (max-width: 480px) {
+  .home-heading {
+    font-size: 3rem; }
+  .go-to-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px; }
+  .monthly-pro {
+    padding: 10px 0; }
+    .monthly-pro .monthly-pro-content {
+      padding: 0; }
+  .gallery div {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%; }
+    .gallery div:nth-child(3) {
+      display: none;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; } }
+
+@media (max-width: 320px) {
+  .home-heading {
+    border: 10px #fdfa69 solid;
+    background-color: #fafafa;
+    padding: 10px;
+    display: block; }
+  .yellow-border {
+    display: none; } }
+
 .blog-body {
   background-color: #effdf3; }
 
 .blog-head {
   background-image: url(../assets/blog-header.jpg);
-  background-size: contain;
+  background-size: cover;
   height: 50vh; }
+
+.special-wrapper {
+  max-width: 1600px;
+  margin: 0 auto; }
 
 .blog-content {
   display: -webkit-box;
@@ -547,7 +591,7 @@ button[type=submit] {
   margin-bottom: -120px; }
   .blog-right-flex .shadow-left {
     position: relative;
-    width: 100%; }
+    right: 0; }
     .blog-right-flex .shadow-left img {
       overflow: hidden; }
   .blog-right-flex .blog-main {
@@ -555,7 +599,7 @@ button[type=submit] {
     -ms-flex: 0 0 60%;
     flex: 0 0 60%; }
   .blog-right-flex .blog-main-words {
-    padding: 20px;
+    padding: 20px 60px 20px 20px;
     margin-left: -15px;
     border-left: 5px #fdfa69 solid;
     border-bottom: 5px #fdfa69 solid; }
@@ -564,7 +608,8 @@ button[type=submit] {
   .blog-right-flex textarea {
     background-color: #effdf3; }
   .blog-right-flex form {
-    margin-top: 40px; }
+    margin-top: 40px;
+    padding: 20px 60px 0px 0px; }
 
 .blog-comments {
   display: -webkit-box;
@@ -573,7 +618,8 @@ button[type=submit] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 20px 60px 0px 0px; }
   .blog-comments .post {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -601,7 +647,7 @@ button[type=submit] {
   flex-direction: column; }
   .blog-left-flex .blog-secondary-image {
     position: relative;
-    right: 95px;
+    right: 120px;
     z-index: 30; }
   .blog-left-flex .blog-secondary-words {
     background-color: #fafafa;

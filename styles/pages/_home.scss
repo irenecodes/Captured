@@ -255,9 +255,47 @@
 }
 
 @media (max-width:480px) {
+    .home-heading {
+        font-size: 3rem;
+    }
+
+
+    // .yellow-border {
+    //     display:none;
+    // }
+
+    .go-to-content {
+        flex-direction: column;
+        padding:10px;
+    }
+
+    .monthly-pro {
+        padding:10px 0;
+        .monthly-pro-content {
+            padding: 0;
+        }
+    }
+
+    .gallery div {
+        flex: 0 0 45%;
+        &:nth-child(3) {
+        display:none;
+        justify-content: space-evenly; 
+        }
+    }
     
 }
 
 @media (max-width:320px) {
+    .home-heading {
+        border: 10px $yellow solid;
+        background-color: $white;
+        padding:10px;
+        display:block;
+    }
+
+    .yellow-border {
+        display:none;
+    }
 
 }

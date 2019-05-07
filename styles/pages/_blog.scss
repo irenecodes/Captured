@@ -5,11 +5,17 @@
 // header styles
 .blog-head {
     background-image: url(../assets/blog-header.jpg);
-	background-size:contain;
+	background-size:cover;
 	height:50vh;
 }
 
 // main styles
+.special-wrapper {
+    max-width: 1600px;
+    margin:0 auto;
+}
+// Spoke to Jenny who advised use of special wrapper
+
 .blog-content {
     display:flex;
     flex-direction: row-reverse;
@@ -28,8 +34,9 @@
     margin-bottom: -120px;
     .shadow-left {
         position:relative;
-        width:100%;
+        // width:106%;
         // left:100px;
+        right:0;
          
         // how to make fixed to right side?!
 
@@ -42,7 +49,7 @@
         flex: 0 0 60%;
     }
     .blog-main-words {
-        padding:20px;
+        padding:20px 60px 20px 20px;
         margin-left: -15px;
         border-left: 5px $yellow solid;
         border-bottom: 5px $yellow solid;
@@ -54,6 +61,7 @@
     }
     form {
         margin-top:40px;
+        padding:20px 60px 0px 0px;
     }
 }
 
@@ -61,6 +69,7 @@
 .blog-comments {
     display:flex;
     flex-direction:column;
+    padding:20px 60px 0px 0px;
     .post {
         display:flex;
     }
@@ -89,7 +98,7 @@
     .blog-secondary-image {
         // max-width:90%;
         position: relative;
-        right:95px;
+        right:120px;
         z-index:30;
         
         // flex: 0 0 25%;
@@ -129,7 +138,7 @@
 
 // media queries 
 @media (max-width:1024px) {
-
+    
 }
 
 @media (max-width:768px) {
