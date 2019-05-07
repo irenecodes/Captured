@@ -27,8 +27,15 @@
     bottom:150px;
     margin-bottom: -120px;
     .shadow-left {
-        width:110%;
         position:relative;
+        width:100%;
+        // left:100px;
+         
+        // how to make fixed to right side?!
+
+        img {
+            overflow:hidden;
+        }
     }
 
     .blog-main {
@@ -82,7 +89,7 @@
     .blog-secondary-image {
         // max-width:90%;
         position: relative;
-        right:90px;
+        right:95px;
         z-index:30;
         
         // flex: 0 0 25%;
@@ -118,4 +125,21 @@
         // list-style-type: circle;
         // circles not showing?
     }
+}
+
+// media queries 
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:768px) {
+    
+}
+
+@media (max-width:480px) {
+    
+}
+
+@media (max-width:320px) {
+
 }

@@ -75,9 +75,20 @@ a {
 footer {
     background: $black;
     text-align: center;
+    color: $white;
     p {
         margin:0;
     }
     // spoke to fatima and text should be white for blog and contact page
 }
 
+
+// media queries for smaller font
+@media (max-width:768px) {
+    html {
+    font-family: $robo;
+    font-size:0.9rem;
+    color:$black;
+    line-height:32px;
+    }
+}

@@ -218,9 +218,17 @@ a {
 
 footer {
   background: #2c2c2c;
-  text-align: center; }
+  text-align: center;
+  color: #fafafa; }
   footer p {
     margin: 0; }
+
+@media (max-width: 768px) {
+  html {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #2c2c2c;
+    line-height: 32px; } }
 
 nav {
   position: absolute;
@@ -235,10 +243,7 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    list-style: none;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
+    list-style: none; }
   nav li {
     font-size: 20px;
     font-family: "Playfair Display", serif;
@@ -250,6 +255,19 @@ nav {
     letter-spacing: 1px; }
   nav a:hover {
     border-bottom: 3px solid #4ceea7; }
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    z-index: 50;
+    background-color: #131313; }
+    nav ul {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    nav a {
+      color: #fafafa;
+      font-family: "Roboto", sans-serif; } }
 
 fieldset {
   border: none; }
@@ -429,8 +447,70 @@ button[type=submit] {
     -ms-flex: 0 0 30%;
     flex: 0 0 30%; }
 
-footer {
-  color: #fafafa; }
+@media (max-width: 1024px) {
+  .home-heading {
+    font-size: 6rem; }
+  .header-bottom h2 {
+    font-size: 1.9rem; }
+  .header-bottom p {
+    text-align: center; }
+  .service-top,
+  .service-bottom {
+    border: #fdfa69 15px solid; }
+    .service-top img,
+    .service-bottom img {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .service-top .service-words,
+    .service-bottom .service-words {
+      text-align: center;
+      padding: 20px; }
+  .service-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .service-top .shadow-right {
+      bottom: 0; }
+  .service-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .service-bottom .shadow-left {
+      top: 0; }
+  .go-to-quadrant,
+  .gallery div {
+    padding: 20px; } }
+
+@media (max-width: 768px) {
+  .home-heading {
+    top: 20%;
+    font-size: 4rem; }
+  .header-bottom h2 {
+    font-size: 1.5rem; }
+  .yellow-border {
+    top: 10%; }
+  .header-bottom {
+    padding: 30px; }
+  .service-words h3 {
+    font-size: 1.3rem; }
+  .go-to-content h3 {
+    font-size: 1.1rem; }
+  .monthly-pro .monthly-pro-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px; }
+    .monthly-pro .monthly-pro-content .monthly-pro-pic,
+    .monthly-pro .monthly-pro-content .monthly-pro-words {
+      width: 85%;
+      padding: 20px;
+      text-align: center;
+      margin: 0 auto; }
+  .gallery {
+    padding: 10px 0; } }
 
 .blog-body {
   background-color: #effdf3; }
@@ -466,8 +546,10 @@ footer {
   bottom: 150px;
   margin-bottom: -120px; }
   .blog-right-flex .shadow-left {
-    width: 110%;
-    position: relative; }
+    position: relative;
+    width: 100%; }
+    .blog-right-flex .shadow-left img {
+      overflow: hidden; }
   .blog-right-flex .blog-main {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60%;
@@ -519,7 +601,7 @@ footer {
   flex-direction: column; }
   .blog-left-flex .blog-secondary-image {
     position: relative;
-    right: 90px;
+    right: 95px;
     z-index: 30; }
   .blog-left-flex .blog-secondary-words {
     background-color: #fafafa;
@@ -606,3 +688,22 @@ footer {
   list-style-type: none; }
   .social-media ul a {
     padding: 10px; }
+
+@media (max-width: 1024px) {
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contact-content form {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-bottom: 15px #fdfa69 solid;
+      border-top: 15px #fdfa69 solid; }
+    .contact-content .form2 {
+      bottom: 10px; }
+  .aside-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; } }

@@ -3,12 +3,15 @@ nav {
     top:0;
     right:40px;
     z-index:10;
+
+    // how to get nav responsive?
+    
     // NEED TO CONTAIN NAV IN WRAPPER
     ul {
         display:flex;
         flex-direction:row; 
         list-style: none;
-        justify-content:flex-end;
+        // justify-content:flex-end;
         }
     li {
         @include heading(20px);
@@ -20,4 +23,21 @@ nav {
     a:hover {
             border-bottom: 3px solid $green;
         }    
+}
+
+@media (max-width:768px) {
+    nav {
+        position:fixed;
+        z-index:50;
+        // right:0;
+        background-color: darken($black, 10);
+        
+        ul {
+            justify-content: center;
+        }
+        a {
+            color: $white;
+            font-family: $robo;
+        }
+    }
 }

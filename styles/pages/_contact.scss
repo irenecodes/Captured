@@ -53,3 +53,36 @@
         padding: 10px;
     }
 }
+
+// media queries 
+@media (max-width:1024px) {
+    .contact-content {
+        flex-direction:column;
+        form {
+            box-shadow:none;
+            border-bottom:15px $yellow solid;
+            border-top: 15px $yellow solid;
+        }
+        .form2 {
+            bottom:10px;
+        }
+    
+    }
+
+    .aside-contact {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media (max-width:768px) {
+    
+}
+
+@media (max-width:480px) {
+    
+}
+
+@media (max-width:320px) {
+
+}
