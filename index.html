@@ -17,15 +17,16 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="home-header">
         <div>
             <div class="fuji">
                 <img src="assets/header-image.jpg" alt="Fujifilm DSLR on display.">
             </div>
 
-            <nav class="wrapper">
+            <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -36,23 +37,20 @@
         <div class = "yellow-border">
             <img src="assets/header-box-image.jpg" alt="Camera Lens on display.">
         </div>
-        <h1 class="home-heading">Captured</h1>
+        <h1 class="home-heading" id="maincontent">Captured</h1>
         <div class="header-bottom">
-            
             <h2>What is captured?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio
             lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum
             ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
-            
             <a class="button" href="#">find out more</a>
-            
         </div> <!-- .header-text ends -->
     </header>
 
     <main>
         <section class="services">
             <div class="service-top">
-                <div>
+                <div class="service-image">
                     <img class="shadow-right" src="assets/left-image.jpg" alt="Camera aimed at sky taken during our landscape photography class.">
                 </div>
 
@@ -70,7 +68,7 @@
                     <a class="button" href="#">Read more</a>
                 </div>
 
-                <div>
+                <div class="service-image">
                     <img class="shadow-left" src="assets/right-image.jpg" alt="Satisfied customer holding the new Canon X.">
                 </div>
             </div>
@@ -79,52 +77,47 @@
         <section class="go-to">
             <div class="go-to-content wrapper">
                 <div class="go-to-quadrant">
-                    <a href="#">
-                        <i class="fas fa-camera"></i>
-            
+                    <a href="#" aria-label="Go to Top Picks page.">
+                        <i aria-hidden="true" class="fas fa-camera"></i>
                     </a>
                     <div class="go-to-quadrant-p">
-                        <h3>Top picks</h3>
-                            
+                        <h3>Top picks</h3>    
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum dolorum, facere quia dolor mollitia maiores.</p>
                     </div>
-                </div>
+                </div> <!-- first quadrant ends -->
 
                 <div class="go-to-quadrant">
-                    <a href="#">
-                        <i class="fas fa-users"></i>
-                        
+                    <a href="#" aria-label="Go to Students and Testimonials page.">
+                        <i aria-hidden="true" class="fas fa-users"></i>   
                     </a>
                     <div class="go-to-quadrant-p">
                         <h3>Community</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
                         dolorum, facere quia dolor mollitia maiores.</p>
                     </div>
-                </div>
+                </div> <!-- second quadrant ends -->
 
                 <div class="go-to-quadrant">
-                    <a href="blog.html">
-                        <i class="fas fa-file"></i>
-                        
+                    <a href="blog.html" aria-label="Go to Our Blog page.">
+                        <i aria-hidden="true" class="fas fa-file"></i> 
                     </a>
                     <div class="go-to-quadrant-p">
                         <h3>Blog</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
                         dolorum, facere quia dolor mollitia maiores.</p>
                     </div>
-                </div>
+                </div> <!-- third quadrant ends -->
 
                 <div class="go-to-quadrant">
-                    <a href="contact.html">
-                        <i class="fas fa-phone"></i>
-                        
+                    <a href="contact.html" aria-label="Go to Our Contact page."">
+                        <i aria-hidden="true" class="fas fa-phone"></i>
                     </a>
                     <div class="go-to-quadrant-p">
                         <h3>get in touch</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, dolorem! Illum nostrum nam numquam. Ipsam laborum
                         dolorum, facere quia dolor mollitia maiores.</p>
                     </div>
-                </div>    
+                </div> <!-- fourth quadrant ends -->
             </div>
         </section> <!-- section go-to ends -->
 
@@ -144,7 +137,7 @@
                     <a class="button" href="#">find out more</a>
                 </div>
             </div>
-        </section>
+        </section> <!-- section monthly profile ends -->
 
         <section class="gallery wrapper">
             <div><img src="assets/gallery-image-1.jpg" alt="Camera on a tri-pod."></div>

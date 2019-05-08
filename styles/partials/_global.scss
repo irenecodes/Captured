@@ -22,8 +22,20 @@ ul {
     margin:0 auto;
 }
 
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: black;
+    color: white;
+}
+
+.skip-link:focus {
+    left:0;
+}
+
 .heading {
-    // @include heading(80px);
     @include heading(4rem);
     text-align: center;
     position:absolute;
@@ -36,12 +48,10 @@ ul {
 }
 
 h2 {
-    // @include heading(42px);
     @include heading(2.1rem);
 }
 
 h3 {
-    // @include heading(32px);
     @include heading(1.6rem);
 }
 
@@ -51,27 +61,23 @@ a {
 }
 
 .button {
-    // @include heading(20px);
     @include heading(1rem);
     padding:10px;
     background-color: $green;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         background-color: darken($green,50);
         color:$yellow;
     }
 }
-
-
-
 .shadow-left {
     box-shadow: -15px 15px $yellow;
 
 }
-
 .shadow-right {
     box-shadow: 15px 15px $yellow;
 }
-
 footer {
     background: $black;
     text-align: center;
@@ -79,31 +85,35 @@ footer {
     p {
         margin:0;
     }
-    // spoke to fatima and text should be white for blog and contact page
+    // spoke to fatima who said text should be white for blog and contact page
 }
 
 
 // media queries for smaller font
 @media (max-width:768px) {
     html {
-    font-family: $robo;
-    font-size:0.9rem;
-    color:$black;
-    line-height:32px;
+        font-family: $robo;
+        font-size:0.9rem;
+        color:$black;
+        line-height:32px;
+    }
+    .heading {
+        border: 10px $yellow solid;
+        background-color: $white;
+        padding:10px;
     }
 }
 
 @media (max-width:480px) {
     .heading {
         font-size:3rem;
+        margin-right:0;
     }
-    
 }
 
 @media (max-width:320px) {
     .heading {
         font-size:2.8rem;
     }
-    
 }
 

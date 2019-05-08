@@ -3,25 +3,23 @@ nav {
     top:0;
     right:40px;
     z-index:10;
-    // how to get nav responsive?
-    
-    // NEED TO CONTAIN NAV IN WRAPPER
     ul {
         display:flex;
         flex-direction:row; 
         list-style: none;
-        // justify-content:flex-end;
-        }
+    }
     li {
         @include heading(20px);
         padding:20px;
         text-align: center;
         line-height: 29px;
         letter-spacing: 1px; 
-        }   
-    a:hover {
-            border-bottom: 3px solid $green;
-        }    
+    }   
+    a:hover,
+    a:active,
+    a:focus {
+        border-bottom: 3px solid $green;
+    }    
 }
 
 
@@ -32,9 +30,7 @@ nav {
         z-index:50;
         right:0;
         left:0;
-        background-color: darken($black, 10);
-        
-        
+        background-color: darken($black, 10); 
         ul {
             justify-content: center;
         }

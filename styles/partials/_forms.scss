@@ -2,11 +2,9 @@ fieldset {
     border:none;
     
 }
-
 .contact-us-form {
     width:100%;
 }
-
 input[type=name],
 input[type=email] {
     border:0;
@@ -16,8 +14,6 @@ input[type=email] {
     padding:10px;
     margin-bottom:10px;
 }
-
-
 textarea {
     width:100%;
     border:1px solid $green;
@@ -25,7 +21,6 @@ textarea {
     resize:none;
     padding:10px;
 }
-
 button[type=submit] {
     @include heading(20px);
     text-align: center;
@@ -37,9 +32,7 @@ button[type=submit] {
     margin: 0 auto;
     padding:10px;
     width:100%;
-    // may change min-width
 }
-
 .personal-input {
     display:flex;
     justify-content: space-between;
@@ -49,8 +42,7 @@ button[type=submit] {
 @media (max-width:480px) {
     .personal-input {
         flex-direction: column;
-    }
-    
+    } 
     input[type=name],
     input[type=email] {
         width:100%;
@@ -58,16 +50,13 @@ button[type=submit] {
         border:1px solid $green;
         margin:5px 0 0 0;
         padding:10px;
-    }
-
-    
+    }    
 }
 
 @media (max-width:320px) {
     button[type=submit] {
         @include heading(0.8rem);
     }
-
 }
 
 

@@ -14,16 +14,17 @@
 
 </head>
 <body class="blog-body">
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="blog-head">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1 class="heading">blog</h1>
+        <h1 class="heading" id="maincontent">blog</h1>
     </header>
     <div class="blog-content special-wrapper">
         <div class="blog-right-flex">
@@ -49,12 +50,12 @@
                     pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel
                     odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis
                     agestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam</p>
-                </div><!-- div great locations ends -->
+                </div><!-- div blog-main-words ends -->
             </main>
 
             <aside class="blog-comments ">
                 <h3>Comments:</h3>
-                <div class="post post1">
+                <div class="post post-1">
                     <div class="avatar">
                         <img src="assets/comment-1.jpg" alt="Jeremy's avatar.">
                     </div>
@@ -73,7 +74,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis explicabo culpa eaque verocupiditate neque, similique quibusdam totam ut delectus voluptatem impedit ipsa ipsum esse voluptatibus, pariatur, eum earum.</p>
                     </div>
                 </div> <!-- Julia post ends -->
-            </aside>
+            </aside> <!-- blog-comments ends -->
 
             <form action="" method="POST" class="contact-us-form" autocomplete="off" name="contact-us-form">
                 <fieldset>
@@ -81,16 +82,12 @@
                         <label for="name" class="visuallyHidden">Name</label>
                         <input type="name" placeholder="Name" id="name">
                 
-                        <label for="emailAddress" class="visuallyHidden">Email Address</label>
+                        <label for="email-address" class="visuallyHidden">Email Address</label>
                         <input type="email" placeholder="Email address" id="emailAddress">
                     </div>
-            
-
                     <label for="comment" class="visuallyHidden">Comment</label>
-                    <textarea name="comment" placeholder="Comment" cols="30" rows="10"></textarea>
-            
+                    <textarea name="comment" placeholder="Comment" cols="30" rows="10"></textarea> 
                     <button type="submit">Post Comment</button>
-            
                 </fieldset>
             </form>
         </div> <!-- right flex ends -->
@@ -110,10 +107,8 @@
                     <li>Scerlerique nec plant id</li>
                 </ul>
             </div>   
-        </aside>
-    </div>
-    
-
+        </aside> <!-- left-flex ends -->
+    </div> <!-- blog content ends -->
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>
